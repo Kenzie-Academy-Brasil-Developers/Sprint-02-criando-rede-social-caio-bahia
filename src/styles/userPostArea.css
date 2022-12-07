@@ -6,7 +6,8 @@
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    max-width: 550px;
+    max-width: 450px;
+    padding: 0px 20px;
 
 }
 .top-post-area .post-user-profile{
@@ -84,4 +85,8 @@
     background: #DEE2E6;
     border: 2px solid #DEE2E6;
     color: #868E96;
+}
+
+@media(min-width: 426px){
+
 }

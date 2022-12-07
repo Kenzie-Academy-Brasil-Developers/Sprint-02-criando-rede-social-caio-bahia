@@ -75,28 +75,61 @@
     
 }
 
-.sugestion-follow-button:hover{
-    color: #4263EB;;
-    background: #EDF2FF;
-    border: 1px solid #4263EB;
-    font-weight: 600;
-    font-size: 14px;
-}
-
 .followed{
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px 12px;
-gap: 10px;
-width: 5.5625rem;
-height: 1.75rem;
-background: var( --brand-color-1);
-border: 1px solid #4263EB;
-border-radius: 2px;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 5.5625rem;
+    height: 1.75rem;
+    background: var( --brand-color-1);
+    border: 1px solid #4263EB;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+}
+
+@media(min-width: 769px){
+    .user-sugestion-area{
+        
+    margin-top: 2.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+
+    }
+    .user-sugestion-area ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: sticky;
+        top: 86px;
+        margin-top: 25px;
+    }
+    .user-sugestion-area ul li{
+        flex-direction: row;
+        gap: 16px
+    }
+    .user-sugestion-profile-text {
+        padding-top: 5px;
+        gap: 8px;
+        width: 120px;
+    }
+    
+    .sugestion-follow-button:hover{
+        color: #4263EB;;
+        background: #EDF2FF;
+        border: 1px solid #4263EB;
+        font-weight: 600;
+        font-size: 14px;
+    }
 }

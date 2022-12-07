@@ -208,7 +208,7 @@ function addModal(array,database){
                     modalh3Text.innerText = array[i].text
                     
                     modalClose.addEventListener("click",()=>{
-                      modalsection.classList.toggle("showModal")
+                      modalsection.classList.remove("showModal")
                       
                     })
                     
