@@ -3,7 +3,7 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 30px 20px;
     gap: 10px;
@@ -19,21 +19,28 @@
     position: sticky;
     z-index: 1;
 }
-.navbar > h1{
+.centralizer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width:986.4px;
+}
+.navbar h1{
     font-weight:600 ;
     font-size: 1.2rem;
 
 }
 
-.navbar > h1 > span{
+.navbar h1 span{
     color: var(--brand-color-1);
 }
 
-.navbar > p{
+.navbar  p{
    font-size: .9rem;
     cursor: pointer;
 }
 
-.navbar > p:hover{
+.navbar p:hover{
     color: red;
 }

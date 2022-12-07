@@ -142,4 +142,11 @@ background-repeat: no-repeat;
     font-size: .875rem;
     font-weight: 400;
 }
-    
+@media(max-width: 768px){
+    .post-area{
+        width: 85%;
+    }
+    .user-sugestion-area{
+        padding: 0px 20px;
+    }
+}
