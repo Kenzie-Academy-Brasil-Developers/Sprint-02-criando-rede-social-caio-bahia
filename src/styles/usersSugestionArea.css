@@ -1,6 +1,7 @@
 .user-sugestion-area{
     width: 100%;
     margin-top: 2.5rem;
+    list-style: none;
 }
 
 .user-sugestion-area h2{
@@ -69,5 +70,33 @@
     border-radius: 2px;
 
     margin-top: 1.25rem;
+    font-weight: 600;
+    font-size: 14px;
     
+}
+
+.sugestion-follow-button:hover{
+    color: #4263EB;;
+    background: #EDF2FF;
+    border: 1px solid #4263EB;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.followed{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 12px;
+gap: 10px;
+width: 5.5625rem;
+height: 1.75rem;
+background: var( --brand-color-1);
+border: 1px solid #4263EB;
+border-radius: 2px;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: white;
 }

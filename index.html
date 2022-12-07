@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="./src/styles/navbar.css">
     <link rel="stylesheet" href="./src/styles/userPostArea.css">
     <link rel="stylesheet" href="./src/styles/usersSugestionArea.css">
+    <link rel="stylesheet" href="./src/styles/PostArea.css">
+    <link rel="stylesheet" href="./src/styles/Modal.css">
 
     <!-- Scripts -->
-    <script src="./src/scripts/index.js" defer></script>
-    <script src="./src/scripts/posts.js" defer></script>
-    <script src="./src/scripts/sugestUsers.js" defer></script>
-    <script src="./src/scripts/users.js" defer></script>
 
+    <script src="./src/scripts/users.js" defer></script>
+    <script src="./src/scripts/sugestUsers.js" defer></script>
+    <script src="./src/scripts/posts.js" defer></script>
+    <script src="./src/scripts/index.js" defer></script>
+    <script src="./src/scripts/modal.js" defer></script>
+
+    
     <title>Techposters</title>
 </head>
 <body>
@@ -26,27 +31,26 @@
         <h1 class="logo"> <span>Tech</span>posters<span>.</span></h1>
         <p>Sair</p>
     </nav>
-    <main> 
-        <!-- Post Area -->
+    <main class="main-container"> 
         <section class="top-post-area">
             <div class="post-user-profile">
                 <img src="./src/assets/img/user1.svg" alt="">
                 <div class="post-user-profile-text">
                     <h3>Samuel Leão</h3>
-                    <p>emprego</p>
+                    <p>Front end Engineer</p>
                 </div>
             </div>
             <input type="text" placeholder="Digite seu título aqui...">
             <textarea name="post-description" id="post-description" cols="30" rows="10" placeholder="Digite Seu Texto Aqui..."></textarea>
-           <div class="post-div-container">
-               <button class="post-button">Postar</button>
+            <div class="post-div-container">
+                <button class="post-button">Postar</button>
            </div>
         </section>
         <!-- User Sugestion Area -->
         <section class="user-sugestion-area">
             <h2>Sugestões para você seguir</h2>
-            <ul>
-                <li >    
+            <ul class="user-sugestion-area-container">
+                <!-- <li class="user-sugestion-profile-card">    
                     <div class="user-sugestion-profile">
                         <img src="./src/assets/img/user4.svg" alt="">
                         <div class="user-sugestion-profile-text">
@@ -55,54 +59,61 @@
                         </div> 
                     </div>
                     <button class="sugestion-follow-button">seguir</button>
-                </li>
-                <li >    
-                    <div class="user-sugestion-profile">
-                        <img src="./src/assets/img/user4.svg" alt="">
-                        <div class="user-sugestion-profile-text">
-                            <h3>nome</h3>
-                            <p>emprego</p>
-                        </div> 
-                    </div>
-                    <button class="sugestion-follow-button">seguir</button>
-                </li>
-                <li >    
-                    <div class="user-sugestion-profile">
-                        <img src="./src/assets/img/user4.svg" alt="">
-                        <div class="user-sugestion-profile-text">
-                            <h3>nome</h3>
-                            <p>emprego</p>
-                        </div> 
-                    </div>
-                    <button class="sugestion-follow-button">seguir</button>
-                </li>
-                <li >    
-                    <div class="user-sugestion-profile">
-                        <img src="./src/assets/img/user4.svg" alt="">
-                        <div class="user-sugestion-profile-text">
-                            <h3>nome</h3>
-                            <p>emprego</p>
-                        </div> 
-                    </div>
-                    <button class="sugestion-follow-button">seguir</button>
-                </li>
-                <li >    
-                    <div class="user-sugestion-profile">
-                        <img src="./src/assets/img/user4.svg" alt="">
-                        <div class="user-sugestion-profile-text">
-                            <h3>nome</h3>
-                            <p>emprego</p>
-                        </div> 
-                    </div>
-                    <button class="sugestion-follow-button">seguir</button>
-                </li>
+                </li> -->
+
             </ul>
 
         </section>
 
-
+        <section class="post-area">
+            <h2 class="post-area-tittle">Posts</h2>
+            <ul class="post-area-container">
+                <!-- <li class="post-area-card">
+                    <div class="post-area-profile-card">
+                        <img src="/src/assets/img/user5.svg" alt="user-photo">
+                        <div class="post-area-profile-card-text-area">
+                            <h3>nome</h3>
+                            <p>emprego</p>
+                        </div>
+                    </div>
+                    <div class="post-area-card-text-area">
+                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur soluta. Aut deleniti expedita, neque cupiditate beatae dolores amet, nobis rem vel ut omnis hic illum modi voluptas minus debitis!</h2>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis a id quis amet provident commodi dolor perspiciatis pariatur! Ipsa fuga pariatur molestias praesentium dolores maxime, commodi libero obcaecati quia.</h3>
+                        
+                    </div>
+                    <div class="post-area-card-buttons-area">
+                        <button class="open-post-button">Abrir Post</button>
+                        <div class="like-area">
+                            <p class="like-button not-liked"></p>
+                            <small class="like-button-count">1</small>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+        
+        
+        
+        <!-- <section class="modal ">
+            <div class="modal-container">
+                <div class="modal-top">
+                    <div class="modal-profile">
+                        <img src="./src/assets/img/user4.svg" alt="">
+                        <div class="modal-profile-text">
+                            <h2>nome</h2>
+                            <p>emprego</p>
+                        </div>
+                    </div>
+                    <span class="modal-close" data-control-modal="modal-closer">X</span>
+                </div>
+                <h2 class="modal-tittle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt expedita repellendus! Tempora ad laudantium eveniet tenetur ullam odit a dicta ea nulla, quo enim ab commodi consequuntur et consequatur!</h2>
+                <h3 class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, unde atque ullam odio saepe minus ad Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut esse unde accusantium asperiores laborum sequi molestiae tempore nesciunt corporis, placeat labore pariatur, eveniet fuga cumque aliquid ducimus recusandae dolor? Fugiat. dolor accusamus possimus assumenda eos vel praesentium. Deleniti veritatis iste eligendi temporibus illo consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora eveniet voluptatum, reiciendis eligendi vel, cupiditate ad eius voluptas exercitationem unde ullam voluptate mollitia architecto alias impedit error deserunt velit excepturi.</h3>
+            </div>
+        </section> -->
     </main>
 
+   
+    
     
     
 </body>

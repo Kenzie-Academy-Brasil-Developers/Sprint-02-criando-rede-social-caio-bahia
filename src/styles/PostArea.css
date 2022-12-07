@@ -1,0 +1,144 @@
+/* Containers */
+.post-area{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.post-area > h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var( --grey-color-1);
+}
+
+.post-area-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.125rem;
+    gap: 3.125rem;
+    margin-bottom: 3.125rem ;
+}
+
+.post-area-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+/* post profile */
+
+.post-area-profile-card{
+    height: 3.25rem;
+    width: 100%;
+    display: flex;
+    gap: .75rem;
+
+}
+.post-area-profile-card > img{
+    width: 3.25rem;
+}
+.post-area-profile-card h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey-color-1);
+}
+.post-area-profile-card p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--grey-color-2);
+}
+/* texto principal */
+
+.post-area-card-text-area{
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+
+}
+.post-area-card-text-area h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--grey-color-1);
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.post-area-card-text-area h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--grey-color-2);
+    
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.post-area-card-buttons-area{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.post-area-card-buttons-area .open-post-button{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 92px;
+    height: 38px;
+    background: var(--grey-color-1);
+    border: 2px solid var(--grey-color-1);
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: .8125rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+/* Like function */
+
+.like-area{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    cursor: pointer;
+    gap: .4375rem
+}
+
+.like-button{
+    width: 25px;
+    height: 25px;
+
+}
+.not-liked{
+background-image: url("../assets/img/LikeVectors/Vectornot-liked.png");
+background-repeat: no-repeat;
+
+}
+.liked{
+    background-image: url("../assets/img/LikeVectors/Vectorliked.png");
+    background-repeat: no-repeat;
+}
+
+.like-area > small{
+    font-size: .875rem;
+    font-weight: 400;
+}
+    
